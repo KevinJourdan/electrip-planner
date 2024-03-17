@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.vehicle-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.vehicle-item:hover {
+    background-color: #f0f0f0;
+}
+
+.vehicle-image img {
+    width: 100px; /* Ajustez la taille de l'image selon vos besoins */
+    height: auto;
+    margin-right: 15px;
+}
+
+.vehicle-info h4 {
+    margin: 0;
+    padding: 0;
+}
+
+.vehicle-info p {
+    margin: 5px 0;
+}
+
+.map-container {
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+

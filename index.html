@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choix de Trajet sur Google Maps</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <input id="searchInput" type="text" placeholder="Rechercher un modèle de véhicule">
+    <button id="loadVehicles">Charger les véhicules électriques</button>
+    <div id="vehicleList"></div>
+    <input id="start" placeholder="Départ">
+    <input id="end" placeholder="Arrivée">
+    <button id="calculateRoute">Calculer le trajet</button>
+    <div id="map" class="map-container"></div>
+    <div id="travelTimeResult"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeN5IQC_Hanrf2TTv0QAFkahlCHVS5mWM&libraries=places" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mapFunctions.js"></script>
+    <script src="getVehicules.js"></script>
+    <script>
+        window.onload = function() {
+            if (typeof initMap === 'function') {
+                initMap();
+            } else {
+                console.error("initMap is not defined");
+            }
+        };
+    </script>
+</body>
+</html>
