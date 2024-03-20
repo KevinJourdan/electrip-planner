@@ -2,7 +2,11 @@ Configuration:
 
 Obtenez une clé API Google Maps sur Google Cloud Console.
 
-Configurez votre clé API dans le fichier index.html où requis.
+Remplacez 'YOUR_API_KEY' par votre clé API dans le fichier index.html .
+
+Créez un Projet sur chargetrip.com.
+
+Remplacez 'YOUR_CLIENT_ID' et 'YOUR_APP_ID' par votre Client ID et APP ID dans le fichier getVehicles.js .
 
 
 Utilisation:

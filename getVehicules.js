@@ -6,8 +6,8 @@ document.getElementById('loadVehicles').addEventListener('click', function loadV
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'x-client-id': '65df318bcd8cc4878330bc6c',
-            'x-app-id': '65df318ccd8cc4878330bc6e',
+            'x-client-id': 'YOUR_CLIENT_ID',
+            'x-app-id': 'YOUR_APP_ID',
         },
         body: JSON.stringify({
             query: `
